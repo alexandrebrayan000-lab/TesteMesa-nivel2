@@ -1,10 +1,10 @@
 using System;
 
-namespace MeuProjeto.Problema1
+public static class problema1
 {
-    public class Program
+    public static void Executar()
     {
-         static void Main(string[] args)
+        Console.WriteLine(">>> EXECUTANDO O PROBLEMA 1 <<<");
           {
             double valorPresente= 1000.0; 
             double taxaJuros = 5.30/100;
@@ -14,6 +14,9 @@ namespace MeuProjeto.Problema1
             Console.WriteLine("Valor Presente | Taxa de Juros | Período | Valor Futuro");
             Console.WriteLine("-------------- | ------------- | ------- | ------------");
             Console.WriteLine($"R$ {valorPresente:F2} | {taxaJuros*100:F2}% | {periodo} | R$ {valorFuturo:F2}");
+
+            Console.WriteLine();
+            Console.WriteLine("Pressione 0 e ENTER para voltar ao menu principal");
             Console.ReadLine();
           }
     }

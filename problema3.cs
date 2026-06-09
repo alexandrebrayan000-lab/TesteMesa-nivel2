@@ -1,10 +1,10 @@
 using System;
 
-namespace MeuProjeto.Problema3
+public static class problema3
 {
-    public class Program
+    public static void Executar()
     {
-        static void Main(string[] args)
+        Console.WriteLine(">>> EXECUTANDO O PROBLEMA 3 <<<");
         {            
             double valorPresente;
             double taxaJuros;
@@ -22,13 +22,12 @@ namespace MeuProjeto.Problema3
             Console.Write("Digite o Período em anos: ");
             periodoAnos = double.Parse(Console.ReadLine()!);
             double i = taxaJuros / 100;
-
             rendimentoTotal = valorPresente * Math.Pow((1 + i), periodoAnos);
-
             Console.WriteLine("---------------------------------------------");
             Console.WriteLine("O rendimento calculado é: R$ " + rendimentoTotal.ToString("F2"));
-            Console.WriteLine("---------------------------------------------");
 
+            Console.WriteLine();
+            Console.WriteLine("Pressione 0 e ENTER para voltar ao menu principal");
             Console.ReadLine();
         }
     }

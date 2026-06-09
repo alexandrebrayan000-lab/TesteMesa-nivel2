@@ -1,10 +1,10 @@
 using System;
 
-namespace MeuProjeto.Problema2
+public static class problema2
 {
-    public class Program
+    public static void Executar()
     {
-        static void Main(string[] args)
+        Console.WriteLine(">>> EXECUTANDO O PROBLEMA 2 <<<");
         {
             double valorPresente = 3800.0;
             double taxaJuros = 1.25/100;
@@ -26,6 +26,8 @@ namespace MeuProjeto.Problema2
                 Console.WriteLine($"Renda Acumulada: R$ {rendaAcumulada+valorPresente:F2}");
                 Console.WriteLine();
             }
+            Console.WriteLine();
+            Console.WriteLine("Pressione 0 e ENTER para voltar ao menu principal");
             Console.ReadLine();
         }
     }
